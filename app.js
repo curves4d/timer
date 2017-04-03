@@ -3,7 +3,6 @@ let dis_css = {
     'color': 'white',
     'font-size': '24px',
     'position': 'fixed',
-    'width': '100%',
     'padding': '10px',
     'align-items': 'center',
     'display': 'flex',
