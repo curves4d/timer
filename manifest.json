@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Timer",
+  "description": "Gives a small display which shows amount of half hours left in the working day",
+  "version": "1.0",
+
+ "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js", "jquery-ui.js",  "app.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
