@@ -20,8 +20,6 @@ $(function() {
         'font-size': '10px'
     });
     dis.draggable();
-    console.log('Attahing the dis');
-    console.log(dis);
 });
 
 
@@ -39,7 +37,6 @@ let runFunc = setInterval(() => {
         let secondsLeft = Math.floor(1800*(halfHoursLeft - intHalfHoursLeft));
         let minsLeft = Math.floor(Math.max(secondsLeft/60, 0));
         let remSeconds = secondsLeft - 60*minsLeft;
-        console.log(halfHoursLeft, intHalfHoursLeft, secondsLeft, minsLeft, remSeconds);
         $('#main_time').text(intHalfHoursLeft + '/18');
         $('#sub').text(minsLeft + ' minutes and ' + remSeconds + ' seconds till next round')
         timeNow = new Date();
