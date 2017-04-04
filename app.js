@@ -16,11 +16,13 @@ let dis = $('<div><div id="main_time"></div><div id="sub"></div></div>').attr('i
 let timeNow = new Date();
 
 $(function() {
-    $(document.body).css({'top': '68px', 'position' : 'relative'})
     $(document.body).prepend(dis);
     $('#sub').css({
-        'font-size': '10px'
+        'font-size': '14px'
     });
+    setTimeout(() => {
+        $(document.body).css({'top': dis.outerHeight(), 'position' : 'relative'});
+    }, 1000);
     dis.draggable();
 });
 
