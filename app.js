@@ -7,7 +7,8 @@ let dis_css = {
     'align-items': 'center',
     'display': 'flex',
     'flex-direction': 'column',
-    'z-index': '9999999'
+    'z-index': '9999999',
+    'width': '100%'
 }
 
 let dis = $('<div><div id="main_time"></div><div id="sub"></div></div>').attr('id', 'timer').css(dis_css);
@@ -15,6 +16,7 @@ let dis = $('<div><div id="main_time"></div><div id="sub"></div></div>').attr('i
 let timeNow = new Date();
 
 $(function() {
+    $(document.body).css({'top': '68px', 'position' : 'relative'})
     $(document.body).prepend(dis);
     $('#sub').css({
         'font-size': '10px'
